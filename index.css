@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(JackBurger.jpg);
+    background-position: center, center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+div h1 {
+    font-size: 40px;
+    text-align: center;
+}
+div h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.menu, .micheladas {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+.menu a {
+    background-color: brown;
+    padding: 15px 100px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+.micheladas a {
+    background-color: brown;
+    padding: 15px 100px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*Icono de Whatsapp*/
+.boton-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 60%;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    animation: breathe 2s ease-in-out infinite;
+}
+/*Estilos con animation contorno respirando*/
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+.icon-whatsapp img {
+   animation: beat 2s ease-in-out infinite;
+}
+/*Estilos de animacion del icono latiendo*/
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.adress h2 {
+    display: flex;
+    justify-content: center;
+}
